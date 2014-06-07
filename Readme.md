@@ -23,5 +23,5 @@ var run = require('eval-as-module')
 Runs `str` as if it were a module at `path` and returns the module object
 
 ```js
-run('module.exports = require("./")', __filename).exports // => run
+run('module.exports = require("eval-as-module")', __filename).exports // => run
 ```
