@@ -1,6 +1,6 @@
 {
   "name": "eval-as-module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Eval a JS string as if it was a file being required",
   "keywords": ["eval","module"],
   "dependencies": {},
