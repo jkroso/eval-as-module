@@ -14,7 +14,6 @@ var json = JSON.stringify
 function run(js, path) {
   var m = new Module(path, module)
   m.paths = Module._nodeModulePaths(dirname(path))
-  console.log(m.paths);
   m.filename = path
   js = 'module.return=eval(' + json(js) + ')'
   m._compile(js, path)
