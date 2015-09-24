@@ -22,6 +22,7 @@ it('should be able to run external requires', function (){
 it('should be able to run external requires with fake path', function (){
   var context = path.resolve(__dirname, './bar/foo.js');
   var m = run('var an = require(\'../fixtures/another\');module.exports = function (a) { return an(a + 1) };', context);
+  console.log(m.paths);
   var val = m.exports(3);
   assert(val == 8);
 });
