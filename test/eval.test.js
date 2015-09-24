@@ -19,6 +19,13 @@ it('should be able to run external requires', function (){
   assert(val == 6);
 });
 
+it('should be able to run external requires with fake path', function (){
+  var context = path.resolve(__dirname, './bar/foo.js');
+  var m = run('var an = require(\'../fixtures/another\');module.exports = function (a) { return an(a + 1) };', context);
+  var val = m.exports(3);
+  assert(val == 8);
+});
+
 it('should provide access to the return value', function(){
   var m = run('1;2;3');
   assert(m.return == 3);
