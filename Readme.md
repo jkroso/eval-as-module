@@ -1,14 +1,12 @@
-
 # eval-as-module
 
-  Eval a JS string as if it was a file being required
+Eval a JS string as if it was a file being required
 
 ## Installation
 
-With your favorite package manager:
-
-- [packin](//github.com/jkroso/packin): `packin add eval-as-module`
-- [npm](//npmjs.org/doc/cli/npm-install.html): `npm install eval-as-module`
+```sh
+npm install eval-as-module
+```
 
 then in your app:
 
