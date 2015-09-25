@@ -1,5 +1,7 @@
 # eval-as-module
 
+![travis-ci](https://travis-ci.org/jkroso/eval-as-module.svg)
+
 Eval a JS string as if it was a file being required
 
 ## Installation
